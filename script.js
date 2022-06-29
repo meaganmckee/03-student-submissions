@@ -96,9 +96,16 @@ const findAverageScore = (array) => {
 
 console.log(findAverageScore(submissions));
 
-// const filterPassing = (array) => {
-//     let passingScores = array.filter((score) => {
-//         return score.passigScores ===true;
-//     }); return
-// };
-// console.log(filterPassing(submissions));
+const filterPassing = (array) => {
+  return array.filter((score) => {
+    return score.passed === true;
+  });
+};
+console.log(filterPassing(submissions));
+
+const filter90Above = (array) => {
+  return array.filter((item) => {
+    return item.score >= 90;
+  });
+};
+console.log(filter90Above(submissions));
