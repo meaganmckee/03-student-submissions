@@ -109,3 +109,12 @@ const filter90Above = (array) => {
   });
 };
 console.log(filter90Above(submissions));
+
+const createRange = (start, end) => {
+  let numbers = [];
+  for (let i = start; i <= end; i++) {
+    numbers.push(i);
+  }
+  return numbers;
+};
+console.log(createRange(1, 10));
